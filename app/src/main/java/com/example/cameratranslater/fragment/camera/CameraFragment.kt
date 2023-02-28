@@ -12,7 +12,6 @@ import com.example.cameratranslater.base.BaseMvpFragment
 import kotlinx.android.synthetic.main.fragment_camera.*
 import java.text.SimpleDateFormat
 
-
 class CameraFragment : BaseMvpFragment<CameraView.View, CameraView.Presenter>(), CameraView.View {
 
     override var presenter: CameraView.Presenter = CameraPresenter()
