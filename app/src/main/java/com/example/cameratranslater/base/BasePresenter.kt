@@ -13,7 +13,7 @@ abstract class BasePresenter<V : MvpView> : ViewModel(), MvpPresenter<V>, Corout
 
     override val coroutineContext: CoroutineContext = SupervisorJob() + Dispatchers.Main.immediate
 
-    private var view: V? = null
+    var view: V? = null
 
     @CallSuper
     override fun attach(view: V) {
